@@ -16,21 +16,17 @@
 </head>
 
 <body onload="start()">
-   
-<button onclick="yesclick()">Money++</button>
+<input id="nameField"> </input>
+<button onclick="selectUser()"> load </button>
+
+<button onclick="clicked()">Money++</button>
 <button onclick="plusLevel()"> LevelUP</button>
-<button onclick="save()"> save</button>
 <button onclick="saveOnServer()">Save on server</button>
 <button onclick="reset()">reset</button>
 <div id="money"></div>
 <div id="level"></div>
 <div id="priceForlevel"></div>
 
-<form method="post" action="/clicked">
-    <input type="text" name="user[name]">
-    <input type="text" name="user[email]">
-    <input type="submit" value="Submit">
-</form>
 
 </body>
 
