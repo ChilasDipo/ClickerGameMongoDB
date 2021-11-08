@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require("express");
 const mongoose = require("mongoose");
 const indexRouter = require('./routes/index');
@@ -14,7 +15,7 @@ let priceForLevel=10
 
 const { MongoClient } = require('mongodb');
 const { collection } = require("./models/food");
-const url = "mongodb+srv://admin:Password@cluster0.vp0pp.mongodb.net/ClickerGame?retryWrites=true&w=majority";
+const url = process.env.url
 const client = new MongoClient(url);
 
  // The database to use
