@@ -1,6 +1,5 @@
 require('dotenv').config()
 const express = require("express");
-const mongoose = require("mongoose");
 const indexRouter = require('./routes/index');
 const javaRouter = require('./routes/JSRoute');
 const cssRouter = require('./routes/CSSRouter');

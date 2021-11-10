@@ -12,4 +12,17 @@ router.get('/', function(req, res, next) {
   //res.render('index', { title: 'Cocktails' });
 });
 
+router.get('/alarm' , (req,res) => {
+
+  res.send(JSON.stringify("WorksmyNigga"))
+
+})
+
+
+router.put('/alarm' , (req,res) => {
+
+  console.log(req.body.alarm)
+
+})
+
 module.exports = router;
