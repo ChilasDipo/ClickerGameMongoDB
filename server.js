@@ -13,7 +13,6 @@ let level = 1
 let priceForLevel=10
 
 const { MongoClient } = require('mongodb');
-const { collection } = require("./models/food");
 const url = process.env.url
 const client = new MongoClient(url);
 
